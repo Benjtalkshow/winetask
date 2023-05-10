@@ -1,0 +1,107 @@
+body {
+  background-color: rgb(14, 7, 0);
+  font: 1em sans-serif;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(65, 49, 34);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  /* adjust this as you like */
+  background-color: orange;
+  transform: scaleX(0);
+  transition: transform .3s;
+  /* adjust this as you like */
+}
+
+li a:hover::after {
+  transform: scaleX(1);
+}
+
+.background-img {
+  background-image: url(/images/Img1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 98%;
+  height: 50vh;
+  margin: 20px auto;
+  border: 3px solid rgb(167, 103, 43);
+}
+h1, p {
+text-align: center;
+}
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 2px solid rgb(167, 103, 43);
+}
+.flex-container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.flex-container .pic img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid rgb(167, 103, 43);
+}
+
+.flex-container .pic1, .pic2, .pic3 {
+  width: 100%;
+}
+.bottom {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  color: yellow;
+  margin-right: 20px;
+}
+input {
+  display: block;
+  width: 70%;
+  height: 5vh;
+  border: none;
+  outline: none;
+}
+.bottom .sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
